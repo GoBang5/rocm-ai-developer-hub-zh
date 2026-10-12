@@ -8,4 +8,4 @@
 4. 运行 python scripts/validate.py 与 python scripts/build_site.py。
 5. 提交 PR。涉及完整校对或硬件验证时，附上可核查的记录，再更新相应状态。
 
-请勿提交 API 密钥、访问令牌、个人数据、未经授权的第三方素材或未核实的性能数字。
+请勿提交 API 密钥、访问令牌、个人数据或未核实的性能数字。

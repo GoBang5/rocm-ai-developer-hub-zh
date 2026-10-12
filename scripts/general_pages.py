@@ -6,7 +6,7 @@ import json
 root=Path(__file__).resolve().parents[1];up=Path(sys.argv[1]);cache=Path(sys.argv[2]);cache.mkdir(parents=True,exist_ok=True)
 license_en=(up/'docs/notebooks/licensing.md').read_text()
 (root/'original/licensing.md').write_text(license_en)
-(root/'licensing.md').write_text('> 本页为 AMD 上游许可与支持说明的中文初译。各组件许可仍以原文为准；这些组件许可不等同于对所有教程授予相同许可。\n> [原文](https://rocm.docs.amd.com/projects/ai-developer-hub/en/latest/notebooks/licensing.html)\n\n'+translate(license_en,cache)+'\n')
+(root/'licensing.md').write_text('> 本页为 AMD 上游许可与支持说明的中文初译。各组件许可仍以原文为准。\n> [原文](https://rocm.docs.amd.com/projects/ai-developer-hub/en/latest/notebooks/licensing.html)\n\n'+translate(license_en,cache)+'\n')
 items=json.loads((root/'_data/catalog.json').read_text());mapping={it['slug']:it for it in items}
 s=(up/'docs/changelog.rst').read_text();(root/'original/changelog.rst').write_text(s)
 s=s[s.index('AI developer tutorials'):];s=s.replace(':doc:`AI Developer Hub <./index>`','[AI 开发者中心](overview.md)')

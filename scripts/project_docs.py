@@ -86,10 +86,6 @@ rocm-ai-developer-hub-zh/
 
 欢迎通过 Issue 报告错误，或提交 PR 改进译文。请先阅读 [贡献指南](CONTRIBUTING.md) 和 [翻译规范](translation-guide.md)，并使用 [术语表](glossary.md)。
 
-## 📝 来源与授权
-
-原文著作权与商标权归 AMD 及各原作者所有。本项目为独立中文翻译项目，与 AMD 无隶属关系，不代表官方中文文档。维护者已确认取得全文翻译和公开发布授权，记录见 [来源与授权说明](NOTICE.md)。原文的组件许可及免责声明见 [许可与支持信息](licensing.md)。本仓库不将原文或译文另行声明为 MIT、Apache 或 CC 许可。
-
 ## 🛠️ 本地构建
 
 ```bash
@@ -104,13 +100,11 @@ python -m http.server 8000 --directory _site
 阅读站由 GitHub Actions 构建并部署到 GitHub Pages。翻译缓存保存在任务工作目录，仓库不包含密钥或用户凭据。
 '''
 for filename,text in [('README.md',readme),('SUMMARY.md',summary),('progress.md',progress),('tutorial-selector.md',select),('overview.md',intro)]: (ROOT/filename).write_text(text)
-(ROOT/'NOTICE.md').write_text('''# 来源与授权说明
+(ROOT/'NOTICE.md').write_text('''# 来源说明
 
 原文项目：[AMD ROCm AI Developer Hub](https://rocm.docs.amd.com/projects/ai-developer-hub/en/latest/index.html)。源文件仓库：[ROCm/gpuaidev](https://github.com/ROCm/gpuaidev)。同步日期：2026-10-12，文档版本 16.0，固定提交 `0071bfd4bd3bd9525405c09a6ae69c983b09312a`。
 
 原文版权归 Advanced Micro Devices, Inc. 及各篇标注作者所有。AMD、ROCm、Instinct 等商标归各权利人所有。本项目不复制官方标识作为自己的标识。
-
-维护者于 2026-10-12 在项目创建会话中确认，已取得这些教程全文中文翻译及公开发布的授权，并指示直接翻译。此记录基于维护者的确认；仓库没有附上授权原件，也不主张上游已经发布通用开放许可。如需证明具体授权范围，由维护者提供相应材料。
 
 项目结构参考 xindoo/agentic-design-patterns，仅借鉴目录组织方式；README、封面、阅读站样式和脚本为本项目自行编写，没有复制其网站模板或个人介绍。
 
@@ -142,7 +136,7 @@ for filename,text in [('README.md',readme),('SUMMARY.md',summary),('progress.md'
 4. 运行 python scripts/validate.py 与 python scripts/build_site.py。
 5. 提交 PR。涉及完整校对或硬件验证时，附上可核查的记录，再更新相应状态。
 
-请勿提交 API 密钥、访问令牌、个人数据、未经授权的第三方素材或未核实的性能数字。
+请勿提交 API 密钥、访问令牌、个人数据或未核实的性能数字。
 ''')
 (ROOT/'PROJECT_STRUCTURE.md').write_text('''# 项目结构说明
 

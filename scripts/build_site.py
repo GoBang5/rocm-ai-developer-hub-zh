@@ -37,7 +37,7 @@ def nav(prefix):
   for it in rows:
    s+=f'<a data-title="{html.escape(it["title"]+" "+it["title_en"],quote=True)}" href="{prefix}chapters/{cat}/{it["slug"]}.html"><small>{it["number"]:02}</small>{html.escape(it["title"])}</a>'
   s+='</div></details>'
- s+=f'<div class="nav-tools"><a href="{prefix}glossary.html">术语表</a><a href="{prefix}progress.html">翻译进度</a><a href="{prefix}changelog.html">上游更新记录</a><a href="{prefix}translation-guide.html">翻译规范</a><a href="{prefix}NOTICE.html">来源与授权</a><a href="{prefix}licensing.html">许可与支持</a></div>'
+ s+=f'<div class="nav-tools"><a href="{prefix}glossary.html">术语表</a><a href="{prefix}progress.html">翻译进度</a><a href="{prefix}changelog.html">上游更新记录</a><a href="{prefix}translation-guide.html">翻译规范</a><a href="{prefix}NOTICE.html">来源说明</a><a href="{prefix}licensing.html">许可与支持</a></div>'
  return s
 
 def page(path,title,body,toc=''):
@@ -91,7 +91,7 @@ def page(path,title,body,toc=''):
 </div>
 <div class="reading-grid">
 <main id="content">'''+context+body+'''<footer class="article-footer">原文版权归 AMD 及各作者所有 · 独立中文翻译项目<br>
-<a href="'''+REPO+'/edit/main/'+path+'''">改进本页 ↗</a> · <a href="'''+prefix+'''NOTICE.html">来源与授权</a>
+<a href="'''+REPO+'/edit/main/'+path+'''">改进本页 ↗</a> · <a href="'''+prefix+'''NOTICE.html">来源说明</a>
 </footer>
 </main>
 <aside class="page-toc">

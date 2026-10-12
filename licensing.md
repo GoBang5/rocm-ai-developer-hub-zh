@@ -1,4 +1,4 @@
-> 本页为 AMD 上游许可与支持说明的中文初译。各组件许可仍以原文为准；这些组件许可不等同于对所有教程授予相同许可。
+> 本页为 AMD 上游许可与支持说明的中文初译。各组件许可仍以原文为准。
 > [原文](https://rocm.docs.amd.com/projects/ai-developer-hub/en/latest/notebooks/licensing.html)
 
 # 许可信息
