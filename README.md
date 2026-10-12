@@ -93,9 +93,6 @@ rocm-ai-developer-hub-zh/
 
 欢迎通过 Issue 报告错误，或提交 PR 改进译文。请先阅读 [贡献指南](CONTRIBUTING.md) 和 [翻译规范](translation-guide.md)，并使用 [术语表](glossary.md)。
 
-## 📝 来源与授权
-
-原文著作权与商标权归 AMD 及各原作者所有。本项目为独立中文翻译项目，与 AMD 无隶属关系，不代表官方中文文档。维护者已确认取得全文翻译和公开发布授权，记录见 [来源与授权说明](NOTICE.md)。原文的组件许可及免责声明见 [许可与支持信息](licensing.md)。本仓库不将原文或译文另行声明为 MIT、Apache 或 CC 许可。
 
 ## 🛠️ 本地构建
 
