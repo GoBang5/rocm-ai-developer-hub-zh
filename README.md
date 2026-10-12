@@ -1,0 +1,111 @@
+![中文教程封面](images/cover.svg)
+
+# AMD ROCm AI 开发者教程（中文翻译项目）
+
+本项目将 AMD **AI Developer Hub** 的教程整理为中文阅读资料，内容覆盖推理、微调、预训练和 GPU 开发与优化。原文以 Jupyter Notebook 发布，译文同时提供 Markdown、中英对照和中文 Notebook。
+
+- 原站：[AI Developer Hub](https://rocm.docs.amd.com/projects/ai-developer-hub/en/latest/index.html)
+- 原文仓库：[ROCm/gpuaidev](https://github.com/ROCm/gpuaidev)
+- 项目维护者：[GoBang5](https://github.com/GoBang5)
+- 组织方式参考：[xindoo/agentic-design-patterns](https://github.com/xindoo/agentic-design-patterns)
+
+> **当前版本：42 篇机器初译。** 已统一核心术语并进行结构与代码一致性检查，尚待逐篇人工校对。代码、命令、提示词和运行输出保留原文；尚未在 AMD GPU 上验证。使用教程时请同时查看对应原文和版本要求。
+
+## 🌐 在线阅读
+
+**[进入中文阅读站](https://GoBang5.github.io/rocm-ai-developer-hub-zh/)** · [完整目录](SUMMARY.md) · [教程筛选](tutorial-selector.md) · [翻译进度](progress.md)
+
+## 📚 教程目录
+
+### 推理（20 篇）
+
+1. [ChatQnA：vLLM 部署与性能评估](chapters/inference/opea_deployment_and_evaluation.md)
+2. [使用 ComfyUI 生成视频](chapters/inference/t2v_comfyui_radeon.md)
+3. [在 AMD Instinct GPU 上通过 Python 运行 ComfyUI 生成工作流](chapters/inference/t2v_comfyui_api_mode_instinct.md)
+4. [在 CPU 或 GPU 上运行 DeepSeek Janus Pro](chapters/inference/deepseek_janus_cpu_gpu.md)
+5. [使用 vLLM V1 运行 DeepSeek-R1](chapters/inference/vllm_v1_DSR1.md)
+6. [使用 vLLM、PydanticAI 与 MCP 构建 AI 智能体](chapters/inference/build_airbnb_agent_mcp.md)
+7. [使用 Hugging Face Transformers 进行推理](chapters/inference/1_inference_ver3_HF_transformers.md)
+8. [使用 vLLM 部署模型](chapters/inference/3_inference_ver3_HF_vllm.md)
+9. [使用 vLLM：从聊天机器人到说唱机器人](chapters/inference/rapbot_vllm.md)
+10. [使用 LlamaIndex 和 Ollama 构建 RAG](chapters/inference/rag_ollama_llamaindex.md)
+11. [使用 vLLM 与视觉语言模型进行 OCR](chapters/inference/ocr_vllm.md)
+12. [为语音助手构建 AI 流水线](chapters/inference/voice_pipeline_rag_ollama.md)
+13. [使用 vLLM 进行投机解码](chapters/inference/speculative_decoding_deep_dive.md)
+14. [使用 SGLang 运行 DeepSeek-R1](chapters/inference/deepseekr1_sglang.md)
+15. [使用 SGLang 分离预填充与解码](chapters/inference/SGlang_PD_Disagg_On_AMD_GPU.md)
+16. [使用 SGLang 多 Token 预测加速 DeepSeek-V3 推理](chapters/inference/mtp.md)
+17. [使用 Google ADK 与 A2A 协议构建多智能体](chapters/inference/power-Google-ADK-on-AMD-platform-and-local-LLMs.md)
+18. [使用 Qwen3.5 和 vLLM 部署 OpenClaw](chapters/inference/openclaw_vllm.md)
+19. [使用 OpenClaw 构建多智能体事件分诊系统](chapters/inference/graph_multiagent_openclaw.md)
+20. [在 AMD Instinct GPU 上分析并优化 AI 智能体性能](chapters/inference/agentic_ai_profiling.md)
+
+### 微调（6 篇）
+
+21. [使用 DiffSynth-Studio 定制 Qwen-Image](chapters/fine_tune/qwen_image.md)
+22. [使用 PEFT 微调视觉语言模型](chapters/fine_tune/fine_tuning_lora_qwen2vl.md)
+23. [使用 torchtune 微调 Llama-3.1 8B](chapters/fine_tune/torchtune_llama3.md)
+24. [使用 Llama-Factory 微调 Llama-3.1 8B](chapters/fine_tune/llama_factory_llama3.md)
+25. [使用 Unsloth 进行 GRPO 训练](chapters/fine_tune/unsloth_Llama3_1_8B_GRPO.md)
+26. [使用 slime 进行 GRPO 训练](chapters/fine_tune/slime_qwen3_4B_GRPO.md)
+
+### 预训练（9 篇）
+
+27. [Megatron-LM 训练环境配置](chapters/pretrain/setup_tutorial.md)
+28. [使用 Megatron-LM 训练大语言模型](chapters/pretrain/train_llama_mock_data.md)
+29. [使用 torchtitan 训练 Llama-3.1 8B](chapters/pretrain/torchtitan_llama3.md)
+30. [使用 PyTorch 训练自定义扩散模型](chapters/pretrain/ddim_pretrain.md)
+31. [使用 SpecForge 训练投机解码草稿模型](chapters/pretrain/SpecForge_SGlang.md)
+32. [使用 TorchTitan 预训练模型](chapters/pretrain/torchtitan_deepseek.md)
+33. [使用 Primus 训练模型](chapters/pretrain/training_with_primus.md)
+34. [SE(3)-Transformer 概览](chapters/pretrain/se3transform_intro.md)
+35. [使用 Triton Inference Server 训练与部署 FinalNet CTR 模型](chapters/pretrain/triton_inference_server_benchmark.md)
+
+### GPU 开发与优化（7 篇）
+
+36. [使用 Quark MXFP4 量化运行 vLLM](chapters/gpu_dev_optimize/mxfp4_quantization_quark_vllm.md)
+37. [使用 Helion 开发与评估 GPU 内核](chapters/gpu_dev_optimize/helion_gpu_kernel_dev.md)
+38. [AITER 库的 MLA 解码内核](chapters/gpu_dev_optimize/aiter_mla_decode_kernel.md)
+39. [使用 Triton 开发与优化内核](chapters/gpu_dev_optimize/triton_kernel_dev.md)
+40. [使用 vLLM 分析 Llama-4 推理性能](chapters/gpu_dev_optimize/llama4_profiling_vllm.md)
+41. [使用 AMD Quark 为 vLLM 进行 FP8 量化](chapters/gpu_dev_optimize/fp8_quantization_quark_vllm.md)
+42. [在 AMD CDNA4 GPU 上优化 FP8 GEMM](chapters/gpu_dev_optimize/fp8_gemm_hip_cdna4.md)
+
+## 📁 项目结构
+
+```text
+rocm-ai-developer-hub-zh/
+├── README.md                 # 项目说明与中文目录
+├── SUMMARY.md                # 完整阅读目录
+├── chapters/                 # 中文 Markdown 教程
+├── original/                 # 固定版本英文 Notebook、Markdown 与图片
+├── notebooks/                # 中文 Notebook（代码保持原样）
+├── bilingual/                # 按单元对齐的中英对照
+├── images/                   # 本项目封面
+├── glossary.md               # 中英术语表
+├── translation-guide.md      # 翻译与校对规范
+├── progress.md               # 初译、校对与验证进度
+├── _data/catalog.json        # 来源、版本、作者、难度与状态
+└── scripts/                  # 翻译、导出、验证和阅读站构建
+```
+
+## 🤝 参与校对
+
+欢迎通过 Issue 报告错误，或提交 PR 改进译文。请先阅读 [贡献指南](CONTRIBUTING.md) 和 [翻译规范](translation-guide.md)，并使用 [术语表](glossary.md)。
+
+## 📝 来源与授权
+
+原文著作权与商标权归 AMD 及各原作者所有。本项目为独立中文翻译项目，与 AMD 无隶属关系，不代表官方中文文档。维护者已确认取得全文翻译和公开发布授权，记录见 [来源与授权说明](NOTICE.md)。原文的组件许可及免责声明见 [许可与支持信息](licensing.md)。本仓库不将原文或译文另行声明为 MIT、Apache 或 CC 许可。
+
+## 🛠️ 本地构建
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/validate.py
+python scripts/build_site.py
+python -m http.server 8000 --directory _site
+```
+
+阅读站由 GitHub Actions 构建并部署到 GitHub Pages。翻译缓存保存在任务工作目录，仓库不包含密钥或用户凭据。

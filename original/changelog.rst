@@ -1,0 +1,292 @@
+.. meta::
+   :description: Changelog for the AI Developer Hub
+   :keywords: AI, ROCm, developers, tutorials, guides, changelog
+
+.. _changelog:
+
+****************************************
+Changelog for the AI Developer Hub
+****************************************
+
+AI developer tutorials are available at the :doc:`AI Developer Hub <./index>`.
+
+Version 16.0
+============
+
+Added
+------
+
+*  New inference tutorial:
+
+   * :doc:`Profiling and optimizing an AI agent on AMD Instinct GPUs <./notebooks/inference/agentic_ai_profiling>`
+
+Version 15.0
+============
+
+Added
+------
+
+*  New inference tutorial:
+
+   * :doc:`Multi-agent incident triage with OpenClaw <./notebooks/inference/graph_multiagent_openclaw>`
+
+Version 14.0
+============
+
+Added
+------
+
+*  New pretraining tutorial:
+
+   * :doc:`Training and serving a FinalNet CTR model with Triton Inference Server <./notebooks/pretrain/triton_inference_server_benchmark>`
+
+*  New inference tutorial:
+
+   * :doc:`Running ComfyUI generative workflows from Python on AMD Instinct GPUs <./notebooks/inference/t2v_comfyui_api_mode_instinct>`
+
+Version 13.0
+============
+
+Added
+------
+
+*  New inference tutorial:
+
+   * :doc:`Deploy OpenClaw with Qwen3.5 and vLLM <./notebooks/inference/openclaw_vllm>`
+
+*  New GPU development and optimization tutorial:
+
+   * :doc:`FP8 GEMM optimization on AMD CDNA4-based GPUs <./notebooks/gpu_dev_optimize/fp8_gemm_hip_cdna4>`
+
+Version 12.0
+============
+
+Added
+------
+
+*  New tutorials highlight on the landing page.
+*  Tutorial inventory selector.
+*  Knowledge level and author information for the individual tutorials.
+
+Version 11.0
+============
+
+Added
+------
+
+*  New pretraining tutorial:
+
+   * :doc:`SE(3)-Transformer overview <./notebooks/pretrain/se3transform_intro>`
+
+Version 10.0
+============
+
+Added
+------
+
+*  New fine-tuning tutorial:
+
+   * :doc:`GRPO with slime <./notebooks/fine_tune/slime_qwen3_4B_GRPO>`
+
+Version 9.0
+===========
+
+Added
+------
+
+*  New fine-tuning tutorial:
+
+   * :doc:`Customize Qwen-Image with DiffSynth-Studio <./notebooks/fine_tune/qwen_image>`
+
+*  New GPU development and optimization tutorial:
+
+   * :doc:`GPU kernel development and assessment with Helion <./notebooks/gpu_dev_optimize/helion_gpu_kernel_dev>`
+
+Version 8.0
+===========
+
+Added
+------
+
+*  New pretraining tutorials:
+
+   * :doc:`Pretraining with TorchTitan <./notebooks/pretrain/torchtitan_deepseek>`
+   * :doc:`Training a model with Primus <./notebooks/pretrain/training_with_primus>`
+
+Version 7.0
+===========
+
+Added
+------
+
+*  New pretraining tutorial:
+
+   * :doc:`Speculative decoding draft model with SpecForge <./notebooks/pretrain/SpecForge_SGlang>`
+
+*  New GPU development and optimization tutorial:
+
+   * :doc:`Quark MXFP4 quantization for vLLM <./notebooks/gpu_dev_optimize/mxfp4_quantization_quark_vllm>`
+
+Version 6.0
+===========
+
+Added
+------
+
+*  New inference tutorials:
+
+   * :doc:`Accelerating DeepSeek-V3 inference using multi-token prediction in SGLang <./notebooks/inference/mtp>`
+   * :doc:`Multi-agents with Google ADK and A2A protocol <./notebooks/inference/power-Google-ADK-on-AMD-platform-and-local-LLMs>`
+
+Removed
+-------
+
+*  The following inference tutorials were removed:
+
+   * Hugging Face TGI
+   * Llama Stack
+
+*  The following fine-tuning tutorials were removed:
+
+   * LLM with LoRA
+   * LLM with QLoRA 
+
+*  The following pretraining tutorial was removed:
+
+   * OLMo model with PyTorch FSDP
+
+Version 5.1
+===========
+
+Added
+------
+
+*  New inference tutorials:
+
+   * :doc:`PD disaggregation with SGLang <./notebooks/inference/SGlang_PD_Disagg_On_AMD_GPU>`
+
+Changed
+-------
+
+*  Updated the ``pydantic_ai`` argument and Node version in the :doc:`AI agent with MCPs using vLLM and PydanticAI <./notebooks/inference/build_airbnb_agent_mcp>` tutorial.
+
+Version 5.0
+===========
+
+Added
+------
+
+*  New inference tutorials:
+
+   * :doc:`ChatQnA vLLM deployment and performance evaluation <./notebooks/inference/opea_deployment_and_evaluation>`
+   * :doc:`Text-to-video generation with ComfyUI <./notebooks/inference/t2v_comfyui_radeon>`
+   * :doc:`DeepSeek Janus Pro on CPU or GPU <./notebooks/inference/deepseek_janus_cpu_gpu>`
+   * :doc:`DeepSeek-R1 with vLLM V1 <./notebooks/inference/vllm_v1_DSR1>`
+
+*  New GPU development and optimization tutorial:
+
+   * :doc:`MLA decoding kernel of AITER library <./notebooks/gpu_dev_optimize/aiter_mla_decode_kernel>`
+
+Version 4.0
+===========
+
+Added
+------
+
+*  New inference tutorial:
+
+   * :doc:`AI agent with MCPs using vLLM and PydanticAI <./notebooks/inference/build_airbnb_agent_mcp>`
+
+*  New GPU development and optimization tutorials:
+
+   * :doc:`Kernel development and optimization with Triton <./notebooks/gpu_dev_optimize/triton_kernel_dev>`
+   * :doc:`Profiling Llama-4 inference with vLLM <./notebooks/gpu_dev_optimize/llama4_profiling_vllm>`
+   * :doc:`FP8 quantization with AMD Quark for vLLM <./notebooks/gpu_dev_optimize/fp8_quantization_quark_vllm>`
+
+Changed
+-------
+
+*  DDIM pretraining tutorial renamed to :doc:`Custom diffusion model with PyTorch <./notebooks/pretrain/ddim_pretrain>`
+   with some minor changes.
+  
+Version 3.1
+===========
+
+Added
+------
+
+*  New fine-tuning tutorial:
+
+   * :doc:`GRPO with Unsloth <./notebooks/fine_tune/unsloth_Llama3_1_8B_GRPO>`
+
+Version 3.0
+===========
+
+Added
+------
+
+*  New inference tutorials:
+
+   *  :doc:`Speculative decoding with vLLM <./notebooks/inference/speculative_decoding_deep_dive>`
+   *  :doc:`Llama Stack <./notebooks/inference/llama-stack-rocm>`
+   *  :doc:`DeepSeek-R1 with SGLang <./notebooks/inference/deepseekr1_sglang>`
+
+
+*  New fine-tuning tutorial:
+  
+   *  :doc:`Llama-3.1 8B with Llama-Factory <./notebooks/fine_tune/llama_factory_llama3>`
+
+*  New pretraining tutorial:
+
+   *  :doc:`DDIM  <./notebooks/pretrain/ddim_pretrain>`
+
+Version 2.0
+===========
+
+Added
+------
+
+*  New inference tutorials:
+
+   *  :doc:`OCR with vision-language models with vLLM <./notebooks/inference/ocr_vllm>`
+   *  :doc:`Building AI pipelines for voice assistants <./notebooks/inference/voice_pipeline_rag_ollama>`
+
+*  New fine-tuning tutorial:
+  
+   *  :doc:`Llama-3.1 8B with torchtune <./notebooks/fine_tune/torchtune_llama3>`
+
+*  New pretraining tutorial:
+
+   *  :doc:`Llama-3.1 8B with torchtitan <./notebooks/pretrain/torchtitan_llama3>`
+
+Changed
+-------
+
+*  Updated the supported ROCm versions for some guides
+*  Additional minor changes
+
+Version 1.0
+===========
+
+Added
+------
+
+*  New inference tutorials:
+
+   *  :doc:`Hugging Face Transformers <./notebooks/inference/1_inference_ver3_HF_transformers>`
+   *  :doc:`Hugging Face TGI <./notebooks/inference/2_inference_ver3_HF_TGI>`
+   *  :doc:`Deploying with vLLM <./notebooks/inference/3_inference_ver3_HF_vllm>`
+   *  :doc:`From chatbot to rap bot with vLLM <./notebooks/inference/rapbot_vllm>`
+   *  :doc:`RAG with LlamaIndex and Ollama <./notebooks/inference/rag_ollama_llamaindex>`
+
+*  New fine-tuning tutorials:
+  
+   *  :doc:`VLM with PEFT <./notebooks/fine_tune/fine_tuning_lora_qwen2vl>`
+   *  :doc:`LLM with LoRA <./notebooks/fine_tune/LoRA_Llama-3.2>`
+   *  :doc:`LLM with QLoRA <./notebooks/fine_tune/QLoRA_Llama-3.1>`
+
+*  New pretraining tutorials:
+
+   *  :doc:`OLMo model with PyTorch FSDP <./notebooks/pretrain/torch_fsdp>`
+   *  :doc:`Training configuration with Megatron-LM <./notebooks/pretrain/setup_tutorial>`
+   *  :doc:`LLM with Megatron-LM <./notebooks/pretrain/train_llama_mock_data>`
